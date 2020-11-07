@@ -55,4 +55,5 @@ while not done:
     if playAgain.lower() in "yesyupya":
         pass
     else:
+        print("Exiting Eurojackpot simulator, Goodbye")
         done = True
