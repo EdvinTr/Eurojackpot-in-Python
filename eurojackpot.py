@@ -1,6 +1,6 @@
 from generate import generate_row
 from userinput import user_row_generator
-import time
+from time import time
 
 done = False
 while not done:
@@ -25,7 +25,7 @@ while not done:
             break
         except ValueError:
             print("Enter a valid number")
-    start = time.time()
+    start = time()
     for x in range(loops):
 
         game_row = generate_row()
@@ -41,7 +41,7 @@ while not done:
         current_val = results_dict[count]
         results_dict[count] = current_val + 1
 
-    end = time.time()
+    end = time()
     print(f"Time Elapsed {round(end - start, 2)}s")
     print(f"You ran {loops} iterations")
     print(f"This is equal to playing the Eurojackpot each week for {int(loops / 52)} years")
